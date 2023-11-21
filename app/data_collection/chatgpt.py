@@ -4,6 +4,8 @@ import undetected_chromedriver as uc
 from configparser import ConfigParser
 from flask import Flask, request
 from selenium.webdriver.chrome.options import Options
+import progressbar
+
 
 app = Flask("app")
 
@@ -66,16 +68,19 @@ class ChatGPT:
         password_field = self._driver.find_element(By.NAME, self._password_id)
         password_field.send_keys(self.__password)
 
-        time.sleep(2)
+        time.sleep(1)
 
         password_continue_button = self._driver.find_element(By.CLASS_NAME, self._password_continue_button_id)
         password_continue_button.click()
         print("We are in!")
 
-        time.sleep(5)
+        time.sleep(2)
 
-        popup_button = self._driver.find_element(By.XPATH, self._popup_id)
-        popup_button.click()
+        try:
+            popup_button = self._driver.find_element(By.XPATH, self._popup_id)
+            popup_button.click()
+        except Exception as e:
+            print(f"Handled exception {e}")
         print("Pop-up cleared, ready to generate!")
 
     @property
@@ -98,16 +103,18 @@ class ChatGPT:
 
         wait_for_output = True
 
-        # Check if the button text is "Regenerate"
-        while wait_for_output:
-            button = self._driver.find_element(By.CLASS_NAME, self._regenerate_id)
-            button_text = button.text
+        # Create an indeterminate progress bar
+        bar = progressbar.ProgressBar(max_value=progressbar.UnknownLength)
 
-            if button_text == "Regenerate":
-                print("Output generated!")
+        # Check if the send button is available
+        while wait_for_output:
+            try:
+                self._driver.find_element(By.XPATH, "//button[@data-testid='send-button']")
+                print("\nOutput generated!")
                 break
-            else:
+            except Exception as e:
                 time.sleep(0.1)
+                bar.update(bar.value + 1)
 
         output = self._driver.find_element(By.XPATH, self._output_id.format(self._conversation_counter["tab1"]))
         self._output = output.text
