@@ -1,0 +1,2 @@
+resources/models/spacy_en_core_web_trf/transformer/model filter=lfs diff=lfs merge=lfs -text
+resources/models/spacy_en_core_web_trf_balanced/transformer/model filter=lfs diff=lfs merge=lfs -text
