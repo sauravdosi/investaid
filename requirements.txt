@@ -26,3 +26,18 @@ urllib3==2.1.0
 websockets==12.0
 Werkzeug==3.0.1
 wsproto==1.2.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl#sha256=83276fc78a70045627144786b52e1f2728ad5e29e5e43916ec37ea9c26a11212
+en-core-web-trf @ https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.6.1/en_core_web_trf-3.6.1-py3-none-any.whl#sha256=f9a1f0ae83954c49ebf92c0f7043ea02de51db59bf6cd3ed849d46928612c806
+spacy==3.6.1
+spacy-alignments==0.9.1
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+spacy-transformers==1.2.5
+torch @ https://download.pytorch.org/whl/cu118/torch-2.1.0%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=a81b554184492005543ddc32e96469f9369d778dedd195d73bda9bed407d6589
+torchaudio @ https://download.pytorch.org/whl/cu118/torchaudio-2.1.0%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=cdfd0a129406155eee595f408cafbb92589652da4090d1d2040f5453d4cae71f
+torchdata==0.7.0
+torchsummary==1.5.1
+torchtext==0.16.0
+torchvision @ https://download.pytorch.org/whl/cu118/torchvision-0.16.0%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=033712f65d45afe806676c4129dfe601ad1321d9e092df62b15847c02d4061dc
+pandas~=2.1.2
+numpy~=1.26.1
