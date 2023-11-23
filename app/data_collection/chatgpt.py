@@ -39,7 +39,7 @@ class ChatGPT:
         self._conversation_counter = {"tab1": 3}
 
     def _launch(self):
-        print("Launching the service...")
+        print(f"Launching the {self.__class__.__name__} service...")
         chrome_options = Options()
         chrome_options.add_experimental_option("detach", True)
         self._driver = uc.Chrome(executable_path=self._chromedriver_path, chrome_options=chrome_options)
