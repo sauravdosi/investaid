@@ -39,24 +39,15 @@ class GoogleFinance:
         self._sheet_title_id = self._config.get("WEB_IDENTIFIERS", "sheet_title")
         self._new_tab_id = self._config.get("WEB_IDENTIFIERS", "new_tab")
 
-
-
         self._company_name = ""
         self._parameter = ""
         self._start_date_str = ""
         self._end_date_str = ""
         self._interval = ""
 
-        self._prefs = {"download.default_directory" : "/Users/sauravdosi/Documents/MSCS at UTD/Fall 2023/investaid/resources/google_finance_data"}
-
-
     def _launch(self):
         print(f"Launching the {self.__class__.__name__} service...")
-        chrome_options = ChromeOptions()
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
-        chrome_options.add_experimental_option("prefs", self._prefs)
-        self._driver = uc.Chrome(executable_path=self._chromedriver_path, chrome_options=chrome_options)
+        self._driver = uc.Chrome(executable_path=self._chromedriver_path)
         self._driver.get(self._service_url)
         print("Launched!")
 
