@@ -3,16 +3,15 @@ from selenium.webdriver.common.by import By
 import undetected_chromedriver as uc
 from configparser import ConfigParser
 from flask import Flask, request
-from selenium.webdriver.chrome.options import Options
 import progressbar
-
+from itertools import cycle
 
 app = Flask("app")
 
 class ChatGPT:
     def __init__(self):
         self._tabs = []
-        self._prompt = ""
+        self._prompt = []
         self._output = ""
         self._driver = None
         self._config = ConfigParser()
@@ -36,24 +35,74 @@ class ChatGPT:
         self._regenerate_id = self._config.get("WEB_IDENTIFIERS", "regenerate")
         self._new_tab_id = self._config.get("WEB_IDENTIFIERS", "new_tab")
 
-        self._conversation_counter = {"tab1": 3}
+        self._conversation_counter = {}
+        self._first_query_flags = {}
+
+        self._tab_count = int(self._config.get("SERVICE", "tab_count"))
+
+        for i in range(self._tab_count):
+            self._conversation_counter.update({f"tab{i}": 3})
+            self._first_query_flags.update({f"tab{i}": True})
+
+        self._tabs = [i for i in range(0, self._tab_count)]
+
+        self._tab_queries = []
+        self._window_queries = []
+        self._output_dict = {}
 
     def _launch(self):
         print(f"Launching the {self.__class__.__name__} service...")
-        chrome_options = Options()
-        chrome_options.add_experimental_option("detach", True)
-        self._driver = uc.Chrome(executable_path=self._chromedriver_path, chrome_options=chrome_options)
+        self._driver = uc.Chrome(executable_path=self._chromedriver_path)
         self._driver.get(self._service_url)
         print("Launched!")
 
     def _new_tab(self):
-        self._driver.execute_script(self._new_tab_id)
+        self._driver.switch_to.new_window('tab')
 
     def _switch_to_tab(self, tab_number:int):
         self._driver.switch_to.window(self._driver.window_handles[tab_number])
 
-    def _tab_manager(self):
+    def _launch_tabs(self):
+        for i in range(1, self._tab_count):
+            self._new_tab()
+            self._driver.get(self._service_url)
+
+    def _is_tab_free(self):
+        try:
+            self._driver.find_element(By.XPATH, "//button[@data-testid='send-button']")
+            return True
+
+        except Exception as e:
+            return False
+
+    def handle_multiple_queries(self):
+        self._tab_queries = self._prompt
+        self._tab_handler()
+
+    def _tab_handler(self):
+
+        for tab_number in cycle(self._tabs):
+            self._switch_to_tab(tab_number)
+            if self._is_tab_free():
+                if not self._first_query_flags[f"tab{tab_number}"]:
+                    output = self._driver.find_element(By.XPATH,
+                                                       self._output_id.format(
+                                                           self._conversation_counter[f"tab{tab_number}"]))
+                    self._output_dict[self._tab_queries[0]] = output.text
+
+
+                if not self._tab_queries:
+                    break
+
+                self._send_prompt(self._tab_queries[0])
+                self._output_dict[self._tab_queries[0]] = ""
+                self._tab_queries.pop(0)
+                self._first_query_flags[f"tab{tab_number}"] = False
+
+
+    def _windows_handler(self):
         pass
+
 
     def _login(self):
         print("Logging in...")
@@ -95,11 +144,14 @@ class ChatGPT:
     def output(self):
         return self._output
 
-    def execute_query(self):
+    def _send_prompt(self, prompt):
         prompt_field = self._driver.find_element(By.ID, self._prompt_id)
-        prompt_field.send_keys(self._prompt)
+        prompt_field.send_keys(prompt)
         prompt_send_button = self._driver.find_element(By.CSS_SELECTOR, self._prompt_send_id)
         prompt_send_button.click()
+
+    def execute_query(self):
+        self._send_prompt(self._prompt[0])
 
         wait_for_output = True
 
@@ -124,16 +176,17 @@ class ChatGPT:
     def deploy(self):
         self._launch()
         self._login()
+        self._launch_tabs()
 
 chatgpt = ChatGPT()
 chatgpt.deploy()
 
 @app.route("/get_response", methods=["POST"])
 def get_response():
-    prompt = request.form.get("prompt")
+    prompt = request.form.getlist('prompt')
     chatgpt.prompt = prompt
-    chatgpt.execute_query()
-    return {"output": chatgpt.output}
+    chatgpt.handle_multiple_queries()
+    return {"output": chatgpt._output_dict}
 
 if __name__ == "__main__":
     app.run(debug=False)
