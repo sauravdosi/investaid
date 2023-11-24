@@ -51,9 +51,7 @@ class ChatGPT:
         self._output_dict = {}
 
     def _launch(self):
-        print("Launching the service...")
-        # chrome_options = Options()
-        # chrome_options.add_experimental_option("detach", True)
+        print(f"Launching the {self.__class__.__name__} service...")
         self._driver = uc.Chrome(executable_path=self._chromedriver_path)
         self._driver.get(self._service_url)
         print("Launched!")
