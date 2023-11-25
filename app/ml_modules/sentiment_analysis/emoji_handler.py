@@ -5,8 +5,8 @@ from configparser import ConfigParser
 
 class EmojiHandler:
     def __init__(self, use_dataset=0):
-        self.text = ""
-        self.output = ""
+        self._text = ""
+        self._output = ""
         self._mapping = {}
         self._driver = None
         self._prompt = ('Give a single phrase not containing any emoji to replace this emoji in a tweet: {emoji}\n'
@@ -53,6 +53,18 @@ class EmojiHandler:
                 self._mapping[emoji]['strong sentiment'] = response.json()["output"]["strong sentiment"]
                 print(self._mapping[_emoji])
 
+    @property
+    def text(self):
+        return self._text
+
+    @text.setter
+    def text(self, value):
+        self._text = value
+
+    @property
+    def output(self):
+        return self._output
+
     def create_mapping(self):
         if self._use_dataset:
             self._preprocess_dataset()
@@ -66,7 +78,7 @@ class EmojiHandler:
             json.dump(self._mapping, json_file, ensure_ascii=False, indent=4)
 
     def replace_emojis(self):
-        self.output = self.text
+        self._output = self.text
         for s in set(self.text):
             if s in self._mapping:
                 if 'context' not in self._mapping[s]:
@@ -77,9 +89,9 @@ class EmojiHandler:
                     replace_txt = f"{self._mapping[s]['strong sentiment']}. "
                 else:
                     replace_txt = f"{self._mapping[s]['sentiment']}. "
-                self.output = self.output.replace(s, '')
-                if replace_txt not in self.output:
-                    self.output += replace_txt
+                self._output = self._output.replace(s, '')
+                if replace_txt not in self._output:
+                    self._output += replace_txt
 
 
 if __name__ == "__main__":
