@@ -8,12 +8,12 @@ app = Flask(__name__)
 class SentimentFinder:
     def __init__(self):
         self._models = {}
-        self.sentiment = None
-        self.sentiment_score = None
-        self.sentiment_scores = None
-        self.cat_scores = None
-        self.output = {}
-        self.all_results = {}
+        self._sentiment = None
+        self._sentiment_score = None
+        self._sentiment_scores = None
+        self._cat_scores = None
+        self._output = {}
+        self._all_results = {}
         self._config = ConfigParser()
         self._config.read(["./config/sentiment_analysis.ini"])
         self._gpu = self._config.get("CONFIG", "gpu")
@@ -26,6 +26,30 @@ class SentimentFinder:
             spacy.prefer_gpu()
             spacy.require_gpu()
 
+    @property
+    def sentiment(self):
+        return self._sentiment
+
+    @property
+    def sentiment_score(self):
+        return self._sentiment_score
+
+    @property
+    def sentiment_scores(self):
+        return self._sentiment_scores
+
+    @property
+    def cat_scores(self):
+        return self._cat_scores
+
+    @property
+    def output(self):
+        return self._output
+
+    @property
+    def all_results(self):
+        return self._all_results
+
     def load_models(self):
         self._spacy_config()
         self._models["spacy_en"] = spacy.load(self._spacy_en_path)
@@ -35,20 +59,20 @@ class SentimentFinder:
         if model in self._models:
             doc = self._models[model](statement)
             sentiments = ['positive', 'negative', 'neutral']
-            self.sentiment = max(sentiments, key=lambda s: doc.cats[s] if s in doc.cats else 0)
-            self.sentiment_score = doc.cats.get(self.sentiment, 0)
-            self.cat_scores = doc.cats
-            self.output = {
+            self._sentiment = max(sentiments, key=lambda s: doc.cats[s] if s in doc.cats else 0)
+            self._sentiment_score = doc.cats.get(self.sentiment, 0)
+            self._cat_scores = doc.cats
+            self._output = {
                 'sentiment': self.sentiment,
                 'cat_score': self.sentiment_score,
                 'cat_scores': self.cat_scores,
                 'model': model
             }
-            self.all_results[model] = self.output
+            self._all_results[model] = self.output
         elif model == "all":
             for m in self._models:
                 self.get_sentiment(statement, model=m)
-            self.output = self.all_results
+            self._output = self._all_results
 
 
 sf = SentimentFinder()
