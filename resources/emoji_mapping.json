@@ -467,192 +467,192 @@
     "😣": {
         "label": "persevering face",
         "sentiment": "struggling",
-        "strong_sentiment": "enduring hardship"
+        "strong sentiment": "enduring hardship"
     },
     "😞": {
         "label": "disappointed face",
         "sentiment": "unhappy",
-        "strong_sentiment": "deeply saddened"
+        "strong sentiment": "deeply saddened"
     },
     "😓": {
         "label": "downcast face with sweat",
         "sentiment": "worried",
-        "strong_sentiment": "anxiously distressed"
+        "strong sentiment": "anxiously distressed"
     },
     "😩": {
         "label": "weary face",
         "sentiment": "tired",
-        "strong_sentiment": "exhausted"
+        "strong sentiment": "exhausted"
     },
     "😫": {
         "label": "tired face",
         "sentiment": "exhausted",
-        "strong_sentiment": "completely drained"
+        "strong sentiment": "completely drained"
     },
     "🥱": {
         "label": "yawning face",
         "sentiment": "sleepy",
-        "strong_sentiment": "overwhelmingly tired"
+        "strong sentiment": "overwhelmingly tired"
     },
     "😤": {
         "label": "face with steam from nose",
         "sentiment": "annoyed",
-        "strong_sentiment": "fuming with anger"
+        "strong sentiment": "fuming with anger"
     },
     "😡": {
         "label": "enraged face",
         "sentiment": "angry",
-        "strong_sentiment": "furious"
+        "strong sentiment": "furious"
     },
     "😠": {
         "label": "angry face",
         "sentiment": "irritated",
-        "strong_sentiment": "infuriated"
+        "strong sentiment": "infuriated"
     },
     "🤬": {
         "label": "face with symbols on mouth",
         "sentiment": "cursing",
-        "strong_sentiment": "incandescent with rage"
+        "strong sentiment": "incandescent with rage"
     },
     "😈": {
         "label": "smiling face with horns",
         "sentiment": "mischievous",
-        "strong_sentiment": "devilishly cunning"
+        "strong sentiment": "devilishly cunning"
     },
     "👿": {
         "label": "angry face with horns",
         "sentiment": "evil",
-        "strong_sentiment": "diabolical"
+        "strong sentiment": "diabolical"
     },
     "💀": {
         "label": "skull",
         "sentiment": "dead",
-        "strong_sentiment": "lifeless"
+        "strong sentiment": "lifeless"
     },
     "☠️": {
         "label": "skull and crossbones",
         "sentiment": "danger",
-        "strong_sentiment": "lethal threat"
+        "strong sentiment": "lethal threat"
     },
     "💩": {
         "label": "pile of poo",
         "sentiment": "disgust",
-        "strong_sentiment": "utterly repulsive"
+        "strong sentiment": "utterly repulsive"
     },
     "🤡": {
         "label": "clown face",
         "sentiment": "foolish",
-        "strong_sentiment": "ridiculously absurd"
+        "strong sentiment": "ridiculously absurd"
     },
     "👹": {
         "label": "ogre",
         "sentiment": "monstrous",
-        "strong_sentiment": "terrifyingly hideous"
+        "strong sentiment": "terrifyingly hideous"
     },
     "👺": {
         "label": "goblin",
         "sentiment": "sneaky",
-        "strong_sentiment": "deviously cunning"
+        "strong sentiment": "deviously cunning"
     },
     "👻": {
         "label": "ghost",
         "sentiment": "spooky",
-        "strong_sentiment": "hauntingly eerie"
+        "strong sentiment": "hauntingly eerie"
     },
     "👽️": {
         "label": "alien",
         "sentiment": "extraterrestrial",
-        "strong_sentiment": "otherworldly"
+        "strong sentiment": "otherworldly"
     },
     "👾": {
         "label": "alien monster",
         "sentiment": "futuristic",
-        "strong_sentiment": "monstrously futuristic"
+        "strong sentiment": "monstrously futuristic"
     },
     "🤖": {
         "label": "robot",
         "sentiment": "mechanical",
-        "strong_sentiment": "unfeeling automaton"
+        "strong sentiment": "unfeeling automaton"
     },
     "😺": {
         "label": "grinning cat",
         "sentiment": "happy",
-        "strong_sentiment": "joyously grinning"
+        "strong sentiment": "joyously grinning"
     },
     "😸": {
         "label": "grinning cat with smiling eyes",
         "sentiment": "smiling",
-        "strong_sentiment": "happily smiling"
+        "strong sentiment": "happily smiling"
     },
     "😹": {
         "label": "cat with tears of joy",
         "sentiment": "laughing",
-        "strong_sentiment": "joyfully in tears"
+        "strong sentiment": "joyfully in tears"
     },
     "😻": {
         "label": "smiling cat with heart-eyes",
         "sentiment": "loving",
-        "strong_sentiment": "adoringly in love"
+        "strong sentiment": "adoringly in love"
     },
     "😼": {
         "label": "cat with wry smile",
         "sentiment": "sly",
-        "strong_sentiment": "cunningly smirking"
+        "strong sentiment": "cunningly smirking"
     },
     "😽": {
         "label": "kissing cat",
         "sentiment": "affectionate",
-        "strong_sentiment": "passionately kissing"
+        "strong sentiment": "passionately kissing"
     },
     "🙀": {
         "label": "weary cat",
         "sentiment": "exhausted",
-        "strong_sentiment": "completely drained"
+        "strong sentiment": "completely drained"
     },
     "😿": {
         "label": "crying cat",
         "sentiment": "sad",
-        "strong_sentiment": "heartbreakingly crying"
+        "strong sentiment": "heartbreakingly crying"
     },
     "😾": {
         "label": "pouting cat",
         "sentiment": "annoyed",
-        "strong_sentiment": "sullenly pouting"
+        "strong sentiment": "sullenly pouting"
     },
     "🙈": {
         "label": "see-no-evil monkey",
         "sentiment": "naughty",
-        "strong_sentiment": "willfully ignorant"
+        "strong sentiment": "willfully ignorant"
     },
     "🙉": {
         "label": "hear-no-evil monkey",
         "sentiment": "ignorant",
-        "strong_sentiment": "deliberately oblivious"
+        "strong sentiment": "deliberately oblivious"
     },
     "🙊": {
         "label": "speak-no-evil monkey",
         "sentiment": "secretive",
-        "strong_sentiment": "conspicuously silent"
+        "strong sentiment": "conspicuously silent"
     },
     "💌": {
         "label": "love letter",
         "sentiment": "romantic",
-        "strong_sentiment": "passionately amorous"
+        "strong sentiment": "passionately amorous"
     },
     "💘": {
         "label": "heart with arrow",
         "sentiment": "romantic",
-        "strong_sentiment": "deeply enamored"
+        "strong sentiment": "deeply enamored"
     },
     "💝": {
         "label": "heart with ribbon",
         "sentiment": "gifted",
-        "strong_sentiment": "exquisitely presented"
+        "strong sentiment": "exquisitely presented"
     },
     "💖": {
         "label": "sparkling heart",
         "sentiment": "lovely",
-        "strong_sentiment": "radiantly lovely"
+        "strong sentiment": "radiantly lovely"
     },
     "💗": {
         "label": "growing heart",
@@ -972,147 +972,147 @@
     "🖖🏾": {
         "label": "vulcan salute: medium-dark skin tone",
         "sentiment": "Live long and prosper",
-        "strong_sentiment": "Live prosperously and thrive indefinitely"
+        "strong sentiment": "Live prosperously and thrive indefinitely"
     },
     "🖖🏿": {
         "label": "vulcan salute: dark skin tone",
         "sentiment": "Live long and prosper",
-        "strong_sentiment": "Live prosperously and thrive indefinitely"
+        "strong sentiment": "Live prosperously and thrive indefinitely"
     },
     "🫱": {
         "label": "rightwards hand",
         "sentiment": "Pointing right",
-        "strong_sentiment": "Pointing emphatically in the right direction"
+        "strong sentiment": "Pointing emphatically in the right direction"
     },
     "🫱🏻": {
         "label": "rightwards hand: light skin tone",
         "sentiment": "Pointing right",
-        "strong_sentiment": "Pointing emphatically in the right direction"
+        "strong sentiment": "Pointing emphatically in the right direction"
     },
     "🫱🏼": {
         "label": "rightwards hand: medium-light skin tone",
         "sentiment": "Pointing right",
-        "strong_sentiment": "Pointing emphatically in the right direction"
+        "strong sentiment": "Pointing emphatically in the right direction"
     },
     "🫱🏽": {
         "label": "rightwards hand: medium skin tone",
         "sentiment": "Pointing right",
-        "strong_sentiment": "Pointing emphatically in the right direction"
+        "strong sentiment": "Pointing emphatically in the right direction"
     },
     "🫱🏾": {
         "label": "rightwards hand: medium-dark skin tone",
         "sentiment": "Pointing right",
-        "strong_sentiment": "Pointing emphatically in the right direction"
+        "strong sentiment": "Pointing emphatically in the right direction"
     },
     "🫱🏿": {
         "label": "rightwards hand: dark skin tone",
         "sentiment": "Pointing right",
-        "strong_sentiment": "Pointing emphatically in the right direction"
+        "strong sentiment": "Pointing emphatically in the right direction"
     },
     "🫲": {
         "label": "leftwards hand",
         "sentiment": "Pointing left",
-        "strong_sentiment": "Pointing emphatically in the left direction"
+        "strong sentiment": "Pointing emphatically in the left direction"
     },
     "🫲🏻": {
         "label": "leftwards hand: light skin tone",
         "sentiment": "Pointing left",
-        "strong_sentiment": "Pointing emphatically in the left direction"
+        "strong sentiment": "Pointing emphatically in the left direction"
     },
     "🫲🏼": {
         "label": "leftwards hand: medium-light skin tone",
         "sentiment": "Pointing left",
-        "strong_sentiment": "Pointing emphatically in the left direction"
+        "strong sentiment": "Pointing emphatically in the left direction"
     },
     "🫲🏽": {
         "label": "leftwards hand: medium skin tone",
         "sentiment": "Pointing left",
-        "strong_sentiment": "Pointing emphatically in the left direction"
+        "strong sentiment": "Pointing emphatically in the left direction"
     },
     "🫲🏾": {
         "label": "leftwards hand: medium-dark skin tone",
         "sentiment": "Pointing left",
-        "strong_sentiment": "Pointing emphatically in the left direction"
+        "strong sentiment": "Pointing emphatically in the left direction"
     },
     "🫲🏿": {
         "label": "leftwards hand: dark skin tone",
         "sentiment": "Pointing left",
-        "strong_sentiment": "Pointing emphatically in the left direction"
+        "strong sentiment": "Pointing emphatically in the left direction"
     },
     "🫳": {
         "label": "palm down hand",
         "sentiment": "Hand facing downward",
-        "strong_sentiment": "Forcefully pressing down with the hand"
+        "strong sentiment": "Forcefully pressing down with the hand"
     },
     "🫳🏻": {
         "label": "palm down hand: light skin tone",
         "sentiment": "Hand facing downward",
-        "strong_sentiment": "Forcefully pressing down with the hand"
+        "strong sentiment": "Forcefully pressing down with the hand"
     },
     "🫳🏼": {
         "label": "palm down hand: medium-light skin tone",
         "sentiment": "Hand facing downward",
-        "strong_sentiment": "Forcefully pressing down with the hand"
+        "strong sentiment": "Forcefully pressing down with the hand"
     },
     "🫳🏽": {
         "label": "palm down hand: medium skin tone",
         "sentiment": "Hand facing downward",
-        "strong_sentiment": "Forcefully pressing down with the hand"
+        "strong sentiment": "Forcefully pressing down with the hand"
     },
     "🫳🏾": {
         "label": "palm down hand: medium-dark skin tone",
         "sentiment": "Hand facing downward",
-        "strong_sentiment": "Forcefully pressing down with the hand"
+        "strong sentiment": "Forcefully pressing down with the hand"
     },
     "🫳🏿": {
         "label": "palm down hand: dark skin tone",
         "sentiment": "Hand facing downward",
-        "strong_sentiment": "Forcefully pressing down with the hand"
+        "strong sentiment": "Forcefully pressing down with the hand"
     },
     "🫴": {
         "label": "palm up hand",
         "sentiment": "Hand facing upward",
-        "strong_sentiment": "Uplifting and open-handed gesture"
+        "strong sentiment": "Uplifting and open-handed gesture"
     },
     "🫴🏻": {
         "label": "palm up hand: light skin tone",
         "sentiment": "Hand facing upward",
-        "strong_sentiment": "Uplifting and open-handed gesture"
+        "strong sentiment": "Uplifting and open-handed gesture"
     },
     "🫴🏼": {
         "label": "palm up hand: medium-light skin tone",
         "sentiment": "Hand facing upward",
-        "strong_sentiment": "Uplifting and open-handed gesture"
+        "strong sentiment": "Uplifting and open-handed gesture"
     },
     "🫴🏽": {
         "label": "palm up hand: medium skin tone",
         "sentiment": "Hand facing upward",
-        "strong_sentiment": "Uplifting and open-handed gesture"
+        "strong sentiment": "Uplifting and open-handed gesture"
     },
     "🫴🏾": {
         "label": "palm up hand: medium-dark skin tone",
         "sentiment": "Hand facing upward",
-        "strong_sentiment": "Uplifting and open-handed gesture"
+        "strong sentiment": "Uplifting and open-handed gesture"
     },
     "🫴🏿": {
         "label": "palm up hand: dark skin tone",
         "sentiment": "Hand facing upward",
-        "strong_sentiment": "Uplifting and open-handed gesture"
+        "strong sentiment": "Uplifting and open-handed gesture"
     },
     "🫷": {
         "label": "leftwards pushing hand",
         "sentiment": "Pushing to the left",
-        "strong_sentiment": "Forcefully pushing to the left"
+        "strong sentiment": "Forcefully pushing to the left"
     },
     "🫷🏻": {
         "label": "leftwards pushing hand: light skin tone",
         "sentiment": "Pushing to the left",
-        "strong_sentiment": "Forcefully pushing to the left"
+        "strong sentiment": "Forcefully pushing to the left"
     },
     "🫷🏼": {
         "label": "leftwards pushing hand: medium-light skin tone",
         "sentiment": "Pushing to the left",
-        "strong_sentiment": "Forcefully pushing to the left"
+        "strong sentiment": "Forcefully pushing to the left"
     },
     "🫷🏽": {
         "label": "leftwards pushing hand: medium skin tone",
@@ -1442,112 +1442,112 @@
     "👈🏼": {
         "label": "backhand index pointing left: medium-light skin tone",
         "sentiment": "pointing left",
-        "strong_sentiment": "pointing sharply left"
+        "strong sentiment": "pointing sharply left"
     },
     "👈🏽": {
         "label": "backhand index pointing left: medium skin tone",
         "sentiment": "pointing left",
-        "strong_sentiment": "pointing sharply left"
+        "strong sentiment": "pointing sharply left"
     },
     "👈🏾": {
         "label": "backhand index pointing left: medium-dark skin tone",
         "sentiment": "pointing left",
-        "strong_sentiment": "pointing sharply left"
+        "strong sentiment": "pointing sharply left"
     },
     "👈🏿": {
         "label": "backhand index pointing left: dark skin tone",
         "sentiment": "pointing left",
-        "strong_sentiment": "pointing sharply left"
+        "strong sentiment": "pointing sharply left"
     },
     "👉️": {
         "label": "backhand index pointing right",
         "sentiment": "pointing right",
-        "strong_sentiment": "pointing sharply right"
+        "strong sentiment": "pointing sharply right"
     },
     "👉🏻": {
         "label": "backhand index pointing right: light skin tone",
         "sentiment": "pointing right",
-        "strong_sentiment": "pointing sharply right"
+        "strong sentiment": "pointing sharply right"
     },
     "👉🏼": {
         "label": "backhand index pointing right: medium-light skin tone",
         "sentiment": "pointing right",
-        "strong_sentiment": "pointing sharply right"
+        "strong sentiment": "pointing sharply right"
     },
     "👉🏽": {
         "label": "backhand index pointing right: medium skin tone",
         "sentiment": "pointing right",
-        "strong_sentiment": "pointing sharply right"
+        "strong sentiment": "pointing sharply right"
     },
     "👉🏾": {
         "label": "backhand index pointing right: medium-dark skin tone",
         "sentiment": "pointing right",
-        "strong_sentiment": "pointing sharply right"
+        "strong sentiment": "pointing sharply right"
     },
     "👉🏿": {
         "label": "backhand index pointing right: dark skin tone",
         "sentiment": "pointing right",
-        "strong_sentiment": "pointing sharply right"
+        "strong sentiment": "pointing sharply right"
     },
     "👆️": {
         "label": "backhand index pointing up",
         "sentiment": "pointing up",
-        "strong_sentiment": "pointing strongly up"
+        "strong sentiment": "pointing strongly up"
     },
     "👆🏻": {
         "label": "backhand index pointing up: light skin tone",
         "sentiment": "pointing up",
-        "strong_sentiment": "pointing strongly up"
+        "strong sentiment": "pointing strongly up"
     },
     "👆🏼": {
         "label": "backhand index pointing up: medium-light skin tone",
         "sentiment": "pointing up",
-        "strong_sentiment": "pointing strongly up"
+        "strong sentiment": "pointing strongly up"
     },
     "👆🏽": {
         "label": "backhand index pointing up: medium skin tone",
         "sentiment": "pointing up",
-        "strong_sentiment": "pointing strongly up"
+        "strong sentiment": "pointing strongly up"
     },
     "👆🏾": {
         "label": "backhand index pointing up: medium-dark skin tone",
         "sentiment": "pointing up",
-        "strong_sentiment": "pointing strongly up"
+        "strong sentiment": "pointing strongly up"
     },
     "👆🏿": {
         "label": "backhand index pointing up: dark skin tone",
         "sentiment": "pointing up",
-        "strong_sentiment": "pointing strongly up"
+        "strong sentiment": "pointing strongly up"
     },
     "🖕": {
         "label": "middle finger",
         "sentiment": "disapproval",
-        "strong_sentiment": "strong disapproval"
+        "strong sentiment": "strong disapproval"
     },
     "🖕🏻": {
         "label": "middle finger: light skin tone",
         "sentiment": "disapproval",
-        "strong_sentiment": "strong disapproval"
+        "strong sentiment": "strong disapproval"
     },
     "🖕🏼": {
         "label": "middle finger: medium-light skin tone",
         "sentiment": "disapproval",
-        "strong_sentiment": "strong disapproval"
+        "strong sentiment": "strong disapproval"
     },
     "🖕🏽": {
         "label": "middle finger: medium skin tone",
         "sentiment": "disapproval",
-        "strong_sentiment": "strong disapproval"
+        "strong sentiment": "strong disapproval"
     },
     "🖕🏾": {
         "label": "middle finger: medium-dark skin tone",
         "sentiment": "disapproval",
-        "strong_sentiment": "strong disapproval"
+        "strong sentiment": "strong disapproval"
     },
     "🖕🏿": {
         "label": "middle finger: dark skin tone",
         "sentiment": "disapproval",
-        "strong_sentiment": "strong disapproval"
+        "strong sentiment": "strong disapproval"
     },
     "👇️": {
         "label": "backhand index pointing down",
@@ -2492,312 +2492,312 @@
     "🧒": {
         "label": "child",
         "sentiment": "innocent",
-        "strong_sentiment": "adorably innocent"
+        "strong sentiment": "adorably innocent"
     },
     "🧒🏻": {
         "label": "child: light skin tone",
         "sentiment": "innocent",
-        "strong_sentiment": "adorably innocent"
+        "strong sentiment": "adorably innocent"
     },
     "🧒🏼": {
         "label": "child: medium-light skin tone",
         "sentiment": "innocent",
-        "strong_sentiment": "adorably innocent"
+        "strong sentiment": "adorably innocent"
     },
     "🧒🏽": {
         "label": "child: medium skin tone",
         "sentiment": "innocent",
-        "strong_sentiment": "adorably innocent"
+        "strong sentiment": "adorably innocent"
     },
     "🧒🏾": {
         "label": "child: medium-dark skin tone",
         "sentiment": "innocent",
-        "strong_sentiment": "adorably innocent"
+        "strong sentiment": "adorably innocent"
     },
     "🧒🏿": {
         "label": "child: dark skin tone",
         "sentiment": "innocent",
-        "strong_sentiment": "adorably innocent"
+        "strong sentiment": "adorably innocent"
     },
     "👦": {
         "label": "boy",
         "sentiment": "youthful",
-        "strong_sentiment": "energetically youthful"
+        "strong sentiment": "energetically youthful"
     },
     "👦🏻": {
         "label": "boy: light skin tone",
         "sentiment": "youthful",
-        "strong_sentiment": "energetically youthful"
+        "strong sentiment": "energetically youthful"
     },
     "👦🏼": {
         "label": "boy: medium-light skin tone",
         "sentiment": "youthful",
-        "strong_sentiment": "energetically youthful"
+        "strong sentiment": "energetically youthful"
     },
     "👦🏽": {
         "label": "boy: medium skin tone",
         "sentiment": "youthful",
-        "strong_sentiment": "energetically youthful"
+        "strong sentiment": "energetically youthful"
     },
     "👦🏾": {
         "label": "boy: medium-dark skin tone",
         "sentiment": "youthful",
-        "strong_sentiment": "energetically youthful"
+        "strong sentiment": "energetically youthful"
     },
     "👦🏿": {
         "label": "boy: dark skin tone",
         "sentiment": "youthful",
-        "strong_sentiment": "energetically youthful"
+        "strong sentiment": "energetically youthful"
     },
     "👧": {
         "label": "girl",
         "sentiment": "playful",
-        "strong_sentiment": "delightfully playful"
+        "strong sentiment": "delightfully playful"
     },
     "👧🏻": {
         "label": "girl: light skin tone",
         "sentiment": "playful",
-        "strong_sentiment": "delightfully playful"
+        "strong sentiment": "delightfully playful"
     },
     "👧🏼": {
         "label": "girl: medium-light skin tone",
         "sentiment": "playful",
-        "strong_sentiment": "delightfully playful"
+        "strong sentiment": "delightfully playful"
     },
     "👧🏽": {
         "label": "girl: medium skin tone",
         "sentiment": "playful",
-        "strong_sentiment": "delightfully playful"
+        "strong sentiment": "delightfully playful"
     },
     "👧🏾": {
         "label": "girl: medium-dark skin tone",
         "sentiment": "playful",
-        "strong_sentiment": "delightfully playful"
+        "strong sentiment": "delightfully playful"
     },
     "👧🏿": {
         "label": "girl: dark skin tone",
         "sentiment": "playful",
-        "strong_sentiment": "delightfully playful"
+        "strong sentiment": "delightfully playful"
     },
     "🧑": {
         "label": "person",
         "sentiment": "neutral",
-        "strong_sentiment": "completely neutral"
+        "strong sentiment": "completely neutral"
     },
     "🧑🏻": {
         "label": "person: light skin tone",
         "sentiment": "neutral",
-        "strong_sentiment": "completely neutral"
+        "strong sentiment": "completely neutral"
     },
     "🧑🏼": {
         "label": "person: medium-light skin tone",
         "sentiment": "neutral",
-        "strong_sentiment": "completely neutral"
+        "strong sentiment": "completely neutral"
     },
     "🧑🏽": {
         "label": "person: medium skin tone",
         "sentiment": "neutral",
-        "strong_sentiment": "completely neutral"
+        "strong sentiment": "completely neutral"
     },
     "🧑🏾": {
         "label": "person: medium-dark skin tone",
         "sentiment": "neutral",
-        "strong_sentiment": "completely neutral"
+        "strong sentiment": "completely neutral"
     },
     "🧑🏿": {
         "label": "person: dark skin tone",
         "sentiment": "neutral",
-        "strong_sentiment": "completely neutral"
+        "strong sentiment": "completely neutral"
     },
     "👱": {
         "label": "person: blond hair",
         "sentiment": "distinctive",
-        "strong_sentiment": "strikingly distinctive"
+        "strong sentiment": "strikingly distinctive"
     },
     "👱🏻": {
         "label": "person: light skin tone, blond hair",
         "sentiment": "distinctive",
-        "strong_sentiment": "strikingly distinctive"
+        "strong sentiment": "strikingly distinctive"
     },
     "👱🏼": {
         "label": "person: medium-light skin tone, blond hair",
         "sentiment": "distinctive",
-        "strong_sentiment": "strikingly distinctive"
+        "strong sentiment": "strikingly distinctive"
     },
     "👱🏽": {
         "label": "person: medium skin tone, blond hair",
         "sentiment": "distinctive",
-        "strong_sentiment": "strikingly distinctive"
+        "strong sentiment": "strikingly distinctive"
     },
     "👱🏾": {
         "label": "person: medium-dark skin tone, blond hair",
         "sentiment": "distinctive",
-        "strong_sentiment": "strikingly distinctive"
+        "strong sentiment": "strikingly distinctive"
     },
     "👱🏿": {
         "label": "person: dark skin tone, blond hair",
         "sentiment": "distinctive",
-        "strong_sentiment": "strikingly distinctive"
+        "strong sentiment": "strikingly distinctive"
     },
     "👨": {
         "label": "man",
         "sentiment": "adult",
-        "strong_sentiment": "maturely adult"
+        "strong sentiment": "maturely adult"
     },
     "👨🏻": {
         "label": "man: light skin tone",
         "sentiment": "adult",
-        "strong_sentiment": "maturely adult"
+        "strong sentiment": "maturely adult"
     },
     "👨🏼": {
         "label": "man: medium-light skin tone",
         "sentiment": "adult",
-        "strong_sentiment": "maturely adult"
+        "strong sentiment": "maturely adult"
     },
     "👨🏽": {
         "label": "man: medium skin tone",
         "sentiment": "adult",
-        "strong_sentiment": "maturely adult"
+        "strong sentiment": "maturely adult"
     },
     "👨🏾": {
         "label": "man: medium-dark skin tone",
         "sentiment": "a man",
-        "strong_sentiment": "a strong, confident man"
+        "strong sentiment": "a strong, confident man"
     },
     "👨🏿": {
         "label": "man: dark skin tone",
         "sentiment": "a man",
-        "strong_sentiment": "a powerful man"
+        "strong sentiment": "a powerful man"
     },
     "🧔": {
         "label": "person: beard",
         "sentiment": "a person with a beard",
-        "strong_sentiment": "a person with a striking beard"
+        "strong sentiment": "a person with a striking beard"
     },
     "🧔🏻": {
         "label": "person: light skin tone, beard",
         "sentiment": "a person with a beard",
-        "strong_sentiment": "a person with a charming beard"
+        "strong sentiment": "a person with a charming beard"
     },
     "🧔🏼": {
         "label": "person: medium-light skin tone, beard",
         "sentiment": "a person with a beard",
-        "strong_sentiment": "a person with an appealing beard"
+        "strong sentiment": "a person with an appealing beard"
     },
     "🧔🏽": {
         "label": "person: medium skin tone, beard",
         "sentiment": "a person with a beard",
-        "strong_sentiment": "a person with a confident beard"
+        "strong sentiment": "a person with a confident beard"
     },
     "🧔🏾": {
         "label": "person: medium-dark skin tone, beard",
         "sentiment": "a person with a beard",
-        "strong_sentiment": "a person with a distinguished beard"
+        "strong sentiment": "a person with a distinguished beard"
     },
     "🧔🏿": {
         "label": "person: dark skin tone, beard",
         "sentiment": "a person with a beard",
-        "strong_sentiment": "a person with a bold beard"
+        "strong sentiment": "a person with a bold beard"
     },
     "🧔‍♂️": {
         "label": "man: beard",
         "sentiment": "a man with a beard",
-        "strong_sentiment": "a man with a striking beard"
+        "strong sentiment": "a man with a striking beard"
     },
     "🧔🏻‍♂️": {
         "label": "man: light skin tone, beard",
         "sentiment": "a man with a beard",
-        "strong_sentiment": "a man with a charming beard"
+        "strong sentiment": "a man with a charming beard"
     },
     "🧔🏼‍♂️": {
         "label": "man: medium-light skin tone, beard",
         "sentiment": "a man with a beard",
-        "strong_sentiment": "a man with an appealing beard"
+        "strong sentiment": "a man with an appealing beard"
     },
     "🧔🏽‍♂️": {
         "label": "man: medium skin tone, beard",
         "sentiment": "a man with a beard",
-        "strong_sentiment": "a man with a confident beard"
+        "strong sentiment": "a man with a confident beard"
     },
     "🧔🏾‍♂️": {
         "label": "man: medium-dark skin tone, beard",
         "sentiment": "a man with a beard",
-        "strong_sentiment": "a man with a distinguished beard"
+        "strong sentiment": "a man with a distinguished beard"
     },
     "🧔🏿‍♂️": {
         "label": "man: dark skin tone, beard",
         "sentiment": "a man with a beard",
-        "strong_sentiment": "a man with a bold beard"
+        "strong sentiment": "a man with a bold beard"
     },
     "🧔‍♀️": {
         "label": "woman: beard",
         "sentiment": "a woman with a beard",
-        "strong_sentiment": "a woman with a unique beard"
+        "strong sentiment": "a woman with a unique beard"
     },
     "🧔🏻‍♀️": {
         "label": "woman: light skin tone, beard",
         "sentiment": "a woman with a beard",
-        "strong_sentiment": "a woman with a charming beard"
+        "strong sentiment": "a woman with a charming beard"
     },
     "🧔🏼‍♀️": {
         "label": "woman: medium-light skin tone, beard",
         "sentiment": "a woman with a beard",
-        "strong_sentiment": "a woman with an appealing beard"
+        "strong sentiment": "a woman with an appealing beard"
     },
     "🧔🏽‍♀️": {
         "label": "woman: medium skin tone, beard",
         "sentiment": "a woman with a beard",
-        "strong_sentiment": "a woman with a confident beard"
+        "strong sentiment": "a woman with a confident beard"
     },
     "🧔🏾‍♀️": {
         "label": "woman: medium-dark skin tone, beard",
         "sentiment": "a woman with a beard",
-        "strong_sentiment": "a woman with a distinguished beard"
+        "strong sentiment": "a woman with a distinguished beard"
     },
     "🧔🏿‍♀️": {
         "label": "woman: dark skin tone, beard",
         "sentiment": "a woman with a beard",
-        "strong_sentiment": "a woman with a bold beard"
+        "strong sentiment": "a woman with a bold beard"
     },
     "👨‍🦰": {
         "label": "man: red hair",
         "sentiment": "a man with red hair",
-        "strong_sentiment": "a fiery-haired man"
+        "strong sentiment": "a fiery-haired man"
     },
     "👨🏻‍🦰": {
         "label": "man: light skin tone, red hair",
         "sentiment": "a man with red hair",
-        "strong_sentiment": "a radiant man with red hair"
+        "strong sentiment": "a radiant man with red hair"
     },
     "👨🏼‍🦰": {
         "label": "man: medium-light skin tone, red hair",
         "sentiment": "a man with red hair",
-        "strong_sentiment": "a man with a vibrant red hair"
+        "strong sentiment": "a man with a vibrant red hair"
     },
     "👨🏽‍🦰": {
         "label": "man: medium skin tone, red hair",
         "sentiment": "a man with red hair",
-        "strong_sentiment": "a man with a bold red hair"
+        "strong sentiment": "a man with a bold red hair"
     },
     "👨🏾‍🦰": {
         "label": "man: medium-dark skin tone, red hair",
         "sentiment": "a man with red hair",
-        "strong_sentiment": "a man with a striking red hair"
+        "strong sentiment": "a man with a striking red hair"
     },
     "👨🏿‍🦰": {
         "label": "man: dark skin tone, red hair",
         "sentiment": "a man with red hair",
-        "strong_sentiment": "a man with a powerful red hair"
+        "strong sentiment": "a man with a powerful red hair"
     },
     "👨‍🦱": {
         "label": "man: curly hair",
         "sentiment": "a man with curly hair",
-        "strong_sentiment": "a man with wild, curly hair"
+        "strong sentiment": "a man with wild, curly hair"
     },
     "👨🏻‍🦱": {
         "label": "man: light skin tone, curly hair",
         "sentiment": "a man with curly hair",
-        "strong_sentiment": "a man with charming, curly hair"
+        "strong sentiment": "a man with charming, curly hair"
     },
     "👨🏼‍🦱": {
         "label": "man: medium-light skin tone, curly hair",
@@ -2962,247 +2962,247 @@
     "🧑🏾‍🦰": {
         "label": "person: medium-dark skin tone, red hair",
         "sentiment": "expressing uniqueness",
-        "strong_sentiment": "celebrating individuality"
+        "strong sentiment": "celebrating individuality"
     },
     "🧑🏿‍🦰": {
         "label": "person: dark skin tone, red hair",
         "sentiment": "standing out",
-        "strong_sentiment": "boldly embracing differences"
+        "strong sentiment": "boldly embracing differences"
     },
     "👩‍🦱": {
         "label": "woman: curly hair",
         "sentiment": "feeling lively",
-        "strong_sentiment": "radiating energy and vivacity"
+        "strong sentiment": "radiating energy and vivacity"
     },
     "👩🏻‍🦱": {
         "label": "woman: light skin tone, curly hair",
         "sentiment": "exuding joy",
-        "strong_sentiment": "overflowing with happiness"
+        "strong sentiment": "overflowing with happiness"
     },
     "👩🏼‍🦱": {
         "label": "woman: medium-light skin tone, curly hair",
         "sentiment": "vibrant and confident",
-        "strong_sentiment": "unapologetically self-assured"
+        "strong sentiment": "unapologetically self-assured"
     },
     "👩🏽‍🦱": {
         "label": "woman: medium skin tone, curly hair",
         "sentiment": "confident and stylish",
-        "strong_sentiment": "unmistakably fashionable"
+        "strong sentiment": "unmistakably fashionable"
     },
     "👩🏾‍🦱": {
         "label": "woman: medium-dark skin tone, curly hair",
         "sentiment": "expressing individuality",
-        "strong_sentiment": "standing out with confidence"
+        "strong sentiment": "standing out with confidence"
     },
     "👩🏿‍🦱": {
         "label": "woman: dark skin tone, curly hair",
         "sentiment": "celebrating uniqueness",
-        "strong_sentiment": "boldly embracing one's distinctiveness"
+        "strong sentiment": "boldly embracing one's distinctiveness"
     },
     "🧑‍🦱": {
         "label": "person: curly hair",
         "sentiment": "embodying charm",
-        "strong_sentiment": "captivating with irresistible charm"
+        "strong sentiment": "captivating with irresistible charm"
     },
     "🧑🏻‍🦱": {
         "label": "person: light skin tone, curly hair",
         "sentiment": "radiating warmth",
-        "strong_sentiment": "glowing with inner beauty"
+        "strong sentiment": "glowing with inner beauty"
     },
     "🧑🏼‍🦱": {
         "label": "person: medium-light skin tone, curly hair",
         "sentiment": "expressing confidence",
-        "strong_sentiment": "radiating self-assuredness"
+        "strong sentiment": "radiating self-assuredness"
     },
     "🧑🏽‍🦱": {
         "label": "person: medium skin tone, curly hair",
         "sentiment": "confidently stylish",
-        "strong_sentiment": "undeniably fashionable"
+        "strong sentiment": "undeniably fashionable"
     },
     "🧑🏾‍🦱": {
         "label": "person: medium-dark skin tone, curly hair",
         "sentiment": "standing out with style",
-        "strong_sentiment": "boldly showcasing personal style"
+        "strong sentiment": "boldly showcasing personal style"
     },
     "🧑🏿‍🦱": {
         "label": "person: dark skin tone, curly hair",
         "sentiment": "celebrating individuality",
-        "strong_sentiment": "embracing uniqueness with pride"
+        "strong sentiment": "embracing uniqueness with pride"
     },
     "👩‍🦳": {
         "label": "woman: white hair",
         "sentiment": "elegantly mature",
-        "strong_sentiment": "gracefully embracing maturity"
+        "strong sentiment": "gracefully embracing maturity"
     },
     "👩🏻‍🦳": {
         "label": "woman: light skin tone, white hair",
         "sentiment": "radiating wisdom",
-        "strong_sentiment": "exuding timeless wisdom"
+        "strong sentiment": "exuding timeless wisdom"
     },
     "👩🏼‍🦳": {
         "label": "woman: medium-light skin tone, white hair",
         "sentiment": "serenely mature",
-        "strong_sentiment": "serenely embracing the beauty of maturity"
+        "strong sentiment": "serenely embracing the beauty of maturity"
     },
     "👩🏽‍🦳": {
         "label": "woman: medium skin tone, white hair",
         "sentiment": "timelessly elegant",
-        "strong_sentiment": "gracefully exuding timeless elegance"
+        "strong sentiment": "gracefully exuding timeless elegance"
     },
     "👩🏾‍🦳": {
         "label": "woman: medium-dark skin tone, white hair",
         "sentiment": "embracing age with grace",
-        "strong_sentiment": "exuding grace in the beauty of aging"
+        "strong sentiment": "exuding grace in the beauty of aging"
     },
     "👩🏿‍🦳": {
         "label": "woman: dark skin tone, white hair",
         "sentiment": "elegantly mature",
-        "strong_sentiment": "gracefully embracing maturity"
+        "strong sentiment": "gracefully embracing maturity"
     },
     "🧑‍🦳": {
         "label": "person: white hair",
         "sentiment": "distinguished",
-        "strong_sentiment": "wisdom personified"
+        "strong sentiment": "wisdom personified"
     },
     "🧑🏻‍🦳": {
         "label": "person: light skin tone, white hair",
         "sentiment": "graceful",
-        "strong_sentiment": "elegance exemplified"
+        "strong sentiment": "elegance exemplified"
     },
     "🧑🏼‍🦳": {
         "label": "person: medium-light skin tone, white hair",
         "sentiment": "sophisticated",
-        "strong_sentiment": "sophistication personified"
+        "strong sentiment": "sophistication personified"
     },
     "🧑🏽‍🦳": {
         "label": "person: medium skin tone, white hair",
         "sentiment": "refined",
-        "strong_sentiment": "classically refined"
+        "strong sentiment": "classically refined"
     },
     "🧑🏾‍🦳": {
         "label": "person: medium-dark skin tone, white hair",
         "sentiment": "dignified",
-        "strong_sentiment": "eminently dignified"
+        "strong sentiment": "eminently dignified"
     },
     "🧑🏿‍🦳": {
         "label": "person: dark skin tone, white hair",
         "sentiment": "regal",
-        "strong_sentiment": "royalty personified"
+        "strong sentiment": "royalty personified"
     },
     "👩‍🦲": {
         "label": "woman: bald",
         "sentiment": "confident",
-        "strong_sentiment": "boldly confident"
+        "strong sentiment": "boldly confident"
     },
     "👩🏻‍🦲": {
         "label": "woman: light skin tone, bald",
         "sentiment": "fearless",
-        "strong_sentiment": "unapologetically fearless"
+        "strong sentiment": "unapologetically fearless"
     },
     "👩🏼‍🦲": {
         "label": "woman: medium-light skin tone, bald",
         "sentiment": "empowered",
-        "strong_sentiment": "unstoppably empowered"
+        "strong sentiment": "unstoppably empowered"
     },
     "👩🏽‍🦲": {
         "label": "woman: medium skin tone, bald",
         "sentiment": "strong",
-        "strong_sentiment": "undeniably strong"
+        "strong sentiment": "undeniably strong"
     },
     "👩🏾‍🦲": {
         "label": "woman: medium-dark skin tone, bald",
         "sentiment": "bold",
-        "strong_sentiment": "boldly resilient"
+        "strong sentiment": "boldly resilient"
     },
     "👩🏿‍🦲": {
         "label": "woman: dark skin tone, bald",
         "sentiment": "empowered",
-        "strong_sentiment": "fearlessly empowered"
+        "strong sentiment": "fearlessly empowered"
     },
     "🧑‍🦲": {
         "label": "person: bald",
         "sentiment": "confident",
-        "strong_sentiment": "boldly confident"
+        "strong sentiment": "boldly confident"
     },
     "🧑🏻‍🦲": {
         "label": "person: light skin tone, bald",
         "sentiment": "fearless",
-        "strong_sentiment": "unapologetically fearless"
+        "strong sentiment": "unapologetically fearless"
     },
     "🧑🏼‍🦲": {
         "label": "person: medium-light skin tone, bald",
         "sentiment": "empowered",
-        "strong_sentiment": "unstoppably empowered"
+        "strong sentiment": "unstoppably empowered"
     },
     "🧑🏽‍🦲": {
         "label": "person: medium skin tone, bald",
         "sentiment": "strong",
-        "strong_sentiment": "undeniably strong"
+        "strong sentiment": "undeniably strong"
     },
     "🧑🏾‍🦲": {
         "label": "person: medium-dark skin tone, bald",
         "sentiment": "bold",
-        "strong_sentiment": "boldly resilient"
+        "strong sentiment": "boldly resilient"
     },
     "🧑🏿‍🦲": {
         "label": "person: dark skin tone, bald",
         "sentiment": "empowered",
-        "strong_sentiment": "fearlessly empowered"
+        "strong sentiment": "fearlessly empowered"
     },
     "👱‍♀️": {
         "label": "woman: blond hair",
         "sentiment": "radiant",
-        "strong_sentiment": "effortlessly radiant"
+        "strong sentiment": "effortlessly radiant"
     },
     "👱🏻‍♀️": {
         "label": "woman: light skin tone, blond hair",
         "sentiment": "angelic",
-        "strong_sentiment": "divinely angelic"
+        "strong sentiment": "divinely angelic"
     },
     "👱🏼‍♀️": {
         "label": "woman: medium-light skin tone, blond hair",
         "sentiment": "glowing",
-        "strong_sentiment": "mesmerizingly glowing"
+        "strong sentiment": "mesmerizingly glowing"
     },
     "👱🏽‍♀️": {
         "label": "woman: medium skin tone, blond hair",
         "sentiment": "sun-kissed",
-        "strong_sentiment": "captivatingly sun-kissed"
+        "strong sentiment": "captivatingly sun-kissed"
     },
     "👱🏾‍♀️": {
         "label": "woman: medium-dark skin tone, blond hair",
         "sentiment": "golden",
-        "strong_sentiment": "radiantly golden"
+        "strong sentiment": "radiantly golden"
     },
     "👱🏿‍♀️": {
         "label": "woman: dark skin tone, blond hair",
         "sentiment": "resplendent",
-        "strong_sentiment": "majestically resplendent"
+        "strong sentiment": "majestically resplendent"
     },
     "👱‍♂️": {
         "label": "man: blond hair",
         "sentiment": "radiant",
-        "strong_sentiment": "effortlessly radiant"
+        "strong sentiment": "effortlessly radiant"
     },
     "👱🏻‍♂️": {
         "label": "man: light skin tone, blond hair",
         "sentiment": "angelic",
-        "strong_sentiment": "divinely angelic"
+        "strong sentiment": "divinely angelic"
     },
     "👱🏼‍♂️": {
         "label": "man: medium-light skin tone, blond hair",
         "sentiment": "glowing",
-        "strong_sentiment": "mesmerizingly glowing"
+        "strong sentiment": "mesmerizingly glowing"
     },
     "👱🏽‍♂️": {
         "label": "man: medium skin tone, blond hair",
         "sentiment": "sun-kissed",
-        "strong_sentiment": "captivatingly sun-kissed"
+        "strong sentiment": "captivatingly sun-kissed"
     },
     "👱🏾‍♂️": {
         "label": "man: medium-dark skin tone, blond hair",
         "sentiment": "golden",
-        "strong_sentiment": "radiantly golden"
+        "strong sentiment": "radiantly golden"
     },
     "👱🏿‍♂️": {
         "label": "man: dark skin tone, blond hair",
