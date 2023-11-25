@@ -1,4 +1,3 @@
-import urllib
 from configparser import ConfigParser
 
 import requests
@@ -29,6 +28,7 @@ class GoogleHeadlines:
         self._last_page_a = self._config.get("WEB_IDENTIFIERS", "last_page_a")
         self._date = self._config.get("WEB_IDENTIFIERS", "time")
         self._ancestor_a = self._config.get("WEB_IDENTIFIERS", "ancestor_a")
+
     @property
     def query(self):
         return self._query
@@ -46,23 +46,26 @@ class GoogleHeadlines:
         self._driver = webdriver.Chrome()
         print("Launched!")
 
-    def _time(self, time):
-        if type(time) == int: return time
+    @staticmethod
+    def _time(time):
+        if isinstance(time, int):
+            return time
         diff = int(time.split(' ')[0])
         if "hours" in time or "hour" in time:
             diff = 1
         elif "mins" in time or "min" in time:
             diff = 1
         elif "weeks" in time or "week" in time:
-            diff = diff*7
+            diff = diff * 7
         elif "months" in time or "month" in time:
-            diff = diff*30
+            diff = diff * 30
         return diff
 
-    def _process_link(self, link, text):
+    @staticmethod
+    def _process_link(link):
         r = requests.get(link)
         html = r.text
-        parsed_html = BeautifulSoup(html)
+        parsed_html = BeautifulSoup(html, features="html.parser")
         title = parsed_html.find('title')
         return title.text.split('|')[0].split('-')[0]
 
@@ -74,8 +77,9 @@ class GoogleHeadlines:
             if len(headline):
                 if '...' in div.text:
                     link = self._driver.find_element(by=By.XPATH,
-                                                     value=self._ancestor_a.format(headline=div.text)).get_attribute('href')
-                    headline = self._process_link(link, div.text.replace('...', ''))
+                                                     value=self._ancestor_a.format(headline=div.text)).get_attribute(
+                        'href')
+                    headline = self._process_link(link)
                 try:
                     time = self._driver.find_element(by=By.XPATH,
                                                      value=self._date.format(headline=div.text)).text
@@ -86,7 +90,7 @@ class GoogleHeadlines:
     def deploy(self):
         self._launch()
 
-    def execute_query(self,):
+    def execute_query(self, ):
         self._driver.get(self._url.format(QUERY='+'.join(self._query.split(' '))))
         self._driver.implicitly_wait(3)
         self._get_headlines()

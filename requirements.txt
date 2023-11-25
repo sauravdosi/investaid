@@ -41,3 +41,5 @@ torchtext==0.16.0
 torchvision @ https://download.pytorch.org/whl/cu118/torchvision-0.16.0%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=033712f65d45afe806676c4129dfe601ad1321d9e092df62b15847c02d4061dc
 pandas~=2.1.2
 numpy~=1.26.1
+bs4~=0.0.1
+beautifulsoup4~=4.12.2
