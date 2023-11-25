@@ -10,9 +10,10 @@ class EmojiHandler:
         self._mapping = {}
         self._driver = None
         self._prompt = ('Give a single phrase not containing any emoji to replace this emoji in a tweet: {emoji}\n'
-            'Emoji label for reference: {label} \n'
-            'Also convey a phrase that can be used to replace multiple emojis that convey strong sentiment than a singular use\n'
-            'Use only this output format: [replacement text, strong emotion]')
+                        'Emoji label for reference: {label} \n'
+                        'Also convey a phrase that can be used to replace multiple emojis that convey strong '
+                        'sentiment than a singular use\n'
+                        'Use only this output format: [replacement text, strong emotion]')
         self._config = ConfigParser()
         self._config.read(["./config/sentiment_analysis.ini"])
         self._dataset = self._config.get("EMOJI", "dataset_path")
@@ -35,12 +36,12 @@ class EmojiHandler:
                     self._mapping[skin['emoji']] = {'label': skin['label']}
 
     def _get_context_from_chatgpt(self, emoji=None):
-        i = 0
         if emoji:
             data = {'prompt': self._prompt.format(emoji=emoji,
                                                   label=self._mapping[emoji]['label'])}
             response = requests.post(self._chatgpt_api_url, data=data)
-            self._mapping[emoji]['context'] = response.json()["output"]
+            self._mapping[emoji]['sentiment'] = response.json()["output"]["sentiment"]
+            self._mapping[emoji]['strong sentiment'] = response.json()["output"]["strong sentiment"]
             print(self._mapping[emoji])
         else:
             for _emoji in self._mapping:
@@ -48,9 +49,8 @@ class EmojiHandler:
                 data = {'prompt': self._prompt.format(emoji=_emoji,
                                                       label=self._mapping[_emoji]['label'])}
                 response = requests.post(self._chatgpt_api_url, data=data)
-                self._mapping[_emoji]['context'] = response.json()["output"]
-                if i > 10: break
-                i += 1
+                self._mapping[emoji]['sentiment'] = response.json()["output"]["sentiment"]
+                self._mapping[emoji]['strong sentiment'] = response.json()["output"]["strong sentiment"]
                 print(self._mapping[_emoji])
 
     def create_mapping(self):
