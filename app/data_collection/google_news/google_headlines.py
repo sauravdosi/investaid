@@ -68,7 +68,9 @@ class GoogleHeadlines:
         html = r.text
         parsed_html = BeautifulSoup(html, features="html.parser")
         title = parsed_html.find('title')
-        return title.text.split('|')[0].split('-')[0]
+        if isinstance(title, str):
+            return title.text.split('|')[0].split('-')[0]
+        return -1
 
     def _get_headlines(self):
         heading_divs = self._driver.find_elements(by=By.XPATH,
@@ -81,11 +83,13 @@ class GoogleHeadlines:
                                                      value=self._ancestor_a.format(headline=div.text)).get_attribute(
                         'href')
                     headline = self._process_link(link)
+                    if headline == -1:
+                        headline = div.text
                 try:
                     time = self._driver.find_element(by=By.XPATH,
                                                      value=self._date.format(headline=div.text)).text
                 except (InvalidSelectorException, NoSuchElementException):
-                    time = self._output[-1]["days"]
+                    time = self._output[-1]["days"] if len(self._output) else 1
                 self._output.append({"headline": headline, "days": self._time(time)})
 
     def deploy(self):
