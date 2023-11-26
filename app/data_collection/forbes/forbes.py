@@ -1,5 +1,5 @@
 from configparser import ConfigParser
-
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from flask import Flask, request
@@ -11,7 +11,6 @@ class ForbesArticles:
     def __init__(self):
         self._output = []
         self._tags = []
-        self._article_info = []
         self._query = "None"
         self._parsed_html = None
         self._session = requests.session()
@@ -22,6 +21,7 @@ class ForbesArticles:
         self.__username = self._config.get("CREDENTIALS", "username")
         self.__password = self._config.get("CREDENTIALS", "password")
         self._chromedriver_path = self._config.get("RESOURCES", "chromedriver_path")
+        self._csv_path = self._config.get("RESOURCES", "output_path")
         self._url = self._config.get("SERVICE", "url")
 
     @property
@@ -34,7 +34,7 @@ class ForbesArticles:
 
     @property
     def output(self):
-        return self._article_info
+        return self._output
 
     @property
     def tags(self):
@@ -62,9 +62,9 @@ class ForbesArticles:
             for p in paragraphs:
                 if len(p.getText()):
                     article.append(p.getText())
-            return article[1:]
+            return " ".join(article[1:])
         except AttributeError:
-            return []
+            return ""
 
     def _get_articles(self):
         article_list = list(
@@ -80,7 +80,7 @@ class ForbesArticles:
                 }
                 tmp["article"] = self._get_article_body(tmp["link"])
                 if len(tmp["article"]):
-                    self._article_info.append(tmp)
+                    self._output.append(tmp)
 
     def execute_query(self):
         # self._driver.get(self._url.format(QUERY='+'.join(self._query.split(' '))))
@@ -88,7 +88,7 @@ class ForbesArticles:
         self._parsed_html = BeautifulSoup(response.text, features="html.parser")
         self._get_tags()
         self._get_articles()
-        pass
+        pd.DataFrame(self._output).to_csv(self._csv_path.format(COMPANY=self._query))
 
 
 forbes_articles = ForbesArticles()

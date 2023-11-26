@@ -1,5 +1,5 @@
 from configparser import ConfigParser
-
+import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from flask import Flask, request
@@ -21,6 +21,7 @@ class GoogleHeadlines:
         self.__username = self._config.get("CREDENTIALS", "username")
         self.__password = self._config.get("CREDENTIALS", "password")
         self._chromedriver_path = self._config.get("RESOURCES", "chromedriver_path")
+        self._csv_path = self._config.get("RESOURCES", "output_path")
         self._url = self._config.get("SERVICE", "url")
         self._page_number_links = self._config.get("WEB_IDENTIFIERS", "page_number_links")
         self._page_number_a = self._config.get("WEB_IDENTIFIERS", "page_number_a")
@@ -84,8 +85,8 @@ class GoogleHeadlines:
                     time = self._driver.find_element(by=By.XPATH,
                                                      value=self._date.format(headline=div.text)).text
                 except (InvalidSelectorException, NoSuchElementException):
-                    time = self._output[-1][1]
-                self._output.append([headline, self._time(time)])
+                    time = self._output[-1]["days"]
+                self._output.append({"headline": headline, "days": self._time(time)})
 
     def deploy(self):
         self._launch()
@@ -110,7 +111,7 @@ class GoogleHeadlines:
                 self._get_headlines()
             except NoSuchElementException:
                 continue
-        self._output = [list(x) for x in set(tuple(x) for x in self._output)]
+        pd.DataFrame(self._output).to_csv(self._csv_path.format(COMPANY=self._query))
 
 
 google_headlines = GoogleHeadlines()
